@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-8 "http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8">
+        <imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#dependOn -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;dependOn">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;dependOn"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;body_mass_index"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;dependOn"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;lifestyle"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;dependOn"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;assessment"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;dependOn"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;intention_of_lose__weight"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#givesInfos -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;givesInfos">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;givesInfos"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;success_or_fail"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;givesInfos"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;evaluation"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;givesInfos"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;nursing_diagnosis"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;givesInfos"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;failure_reason"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;givesInfos"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;degree_of_obesity"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#hasCodeAction -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;hasCodeAction">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasCodeAction"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Action"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasCodeAction"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#hasCodeObesityInfo -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;hasCodeObesityInfo">
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasCodeObesityInfo"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasCodeAction"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#hasLevel -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;hasLevel">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasLevel"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;implemantation"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;hasLevel"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Action"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#hasName -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#hasResult -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;hasResult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#produce -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;produce">
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;produce"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;data"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;produce"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;assessment"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;produce"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;evaluation"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#Action -->
+
+    <Class rdf:about="&untitled-ontology-8;Action">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#assessment -->
+
+    <Class rdf:about="&untitled-ontology-8;assessment">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;data"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#body_mass_index -->
+
+    <Class rdf:about="&untitled-ontology-8;body_mass_index">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;assessment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#data -->
+
+    <Class rdf:about="&untitled-ontology-8;data">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#degree_of_obesity -->
+
+    <Class rdf:about="&untitled-ontology-8;degree_of_obesity">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;nursing_diagnosis"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#education -->
+
+    <Class rdf:about="&untitled-ontology-8;education">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;implemantation"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#evaluation -->
+
+    <Class rdf:about="&untitled-ontology-8;evaluation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;data"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#failure_reason -->
+
+    <Class rdf:about="&untitled-ontology-8;failure_reason">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;evaluation"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#implemantation -->
+
+    <Class rdf:about="&untitled-ontology-8;implemantation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Action"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#intention_of_lose__weight -->
+
+    <Class rdf:about="&untitled-ontology-8;intention_of_lose__weight">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;assessment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#judgment -->
+
+    <Class rdf:about="&untitled-ontology-8;judgment">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#lifestyle -->
+
+    <Class rdf:about="&untitled-ontology-8;lifestyle">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;assessment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#nursing_diagnosis -->
+
+    <Class rdf:about="&untitled-ontology-8;nursing_diagnosis">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;judgment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#obesity_management_information -->
+
+    <Class rdf:about="&untitled-ontology-8;obesity_management_information">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#outcome_identification -->
+
+    <Class rdf:about="&untitled-ontology-8;outcome_identification">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;judgment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#recommendation -->
+
+    <Class rdf:about="&untitled-ontology-8;recommendation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;implemantation"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#success_or_fail -->
+
+    <Class rdf:about="&untitled-ontology-8;success_or_fail">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;evaluation"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#target_date -->
+
+    <Class rdf:about="&untitled-ontology-8;target_date">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;outcome_identification"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#target_weight -->
+
+    <Class rdf:about="&untitled-ontology-8;target_weight">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;outcome_identification"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#A3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;A3">
+        <rdf:type rdf:resource="&untitled-ontology-8;evaluation"/>
+        <untitled-ontology-8:givesInfos rdf:resource="&untitled-ontology-8;success"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#A35R -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;A35R">
+        <rdf:type rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#AB25 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;AB25">
+        <rdf:type rdf:resource="&untitled-ontology-8;data"/>
+        <untitled-ontology-8:produce rdf:resource="&untitled-ontology-8;A3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#Ali -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Ali">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <untitled-ontology-8:hasCodeObesityInfo rdf:resource="&untitled-ontology-8;B235"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#B235 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;B235">
+        <rdf:type rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+        <untitled-ontology-8:produce rdf:resource="&untitled-ontology-8;AB25"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#C567 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;C567">
+        <rdf:type rdf:resource="&untitled-ontology-8;obesity_management_information"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#Khawla -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Khawla">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <untitled-ontology-8:hasCodeObesityInfo rdf:resource="&untitled-ontology-8;A35R"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#Yosra -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Yosra">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <untitled-ontology-8:hasCodeObesityInfo rdf:resource="&untitled-ontology-8;C567"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#fail -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;fail">
+        <rdf:type rdf:resource="&untitled-ontology-8;success_or_fail"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#success -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;success">
+        <rdf:type rdf:resource="&untitled-ontology-8;success_or_fail"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#weak_willigness -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;weak_willigness">
+        <rdf:type rdf:resource="&untitled-ontology-8;failure_reason"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2015/11/untitled-ontology-8#30Percent -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;30Percent">
+        <rdf:type rdf:resource="&untitled-ontology-8;intention_of_lose__weight"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
